@@ -1,0 +1,18 @@
+{
+"users":[
+        {
+        "fullname":"Liel Buhnick",
+        "age":24,
+        "userName":"Liel",
+        "password":"123",
+        "id":2
+    },
+    {
+        "fullname":"Amir Shnider",
+        "age":30,
+        "userName":"Amir",
+        "password":"123",
+        "id":3
+    }
+]
+}

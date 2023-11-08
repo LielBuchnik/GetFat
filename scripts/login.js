@@ -8,7 +8,7 @@ const logIn_handler = () => {
     }else{
 
         let xhr = new XMLHttpRequest();
-        xhr.open("Get" , "../../data/users.json" , true);
+        xhr.open("Get" , "../data/json/users.json" , true);
         xhr.onload = function()
         {
             let response = JSON.parse(this.responseText);
@@ -20,7 +20,7 @@ const logIn_handler = () => {
                 if(userName.value == user.userName && password.value == user.password)
                 {
                     localStorage.setItem("userDetails" , JSON.stringify(user));
-                    window.location.href = "./homePage.html";
+                    window.location.href = "./homepage.html";
                 }
             }
         };
