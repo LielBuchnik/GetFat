@@ -20,7 +20,7 @@ const logIn_handler = () => {
                 if(userName.value == user.userName && password.value == user.password)
                 {
                     localStorage.setItem("userDetails" , JSON.stringify(user));
-                    window.location.href = "./homepage.html";
+                    window.location.href = "../html/homepage.html";
                 }
             }
         };
