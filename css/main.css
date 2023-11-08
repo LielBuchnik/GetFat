@@ -51,7 +51,7 @@
     font-family: 'Oswald', sans-serif;
 }
 
-#container h2{
+h2{
     margin-left: 15%;
     margin-bottom: 2%;
 }
@@ -152,10 +152,61 @@
 
 /* Restaurant page */
 
+#foodTitle{
+    margin-left: 10%;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
 #foodList{
     display: inline-grid;
     gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 75%;
-    margin-left: 15%;
+    margin-left: 10%;
+}
+
+.foodBox{
+    width: 300px;
+    height: 400px;
+    border: 1px solid #bebebe;
+    border-radius: 8px;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.33);
+    transition: 0.2s;
+}
+
+.food-image{
+    object-fit: cover;
+    width: 400px;
+    height: 100px;
+    transition: 0.2s;
+}
+
+
+.foodBox p{
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    line-height: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.foodBox:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 5px 0px rgba(6,86,161,0.33);
+    transition: 0.2s;
+    .rest-image{
+        object-fit: cover;
+        width: 300px;
+        height: 100px;
+        transition: 0.2s;
+    }
+
+    .food-buy{
+        display: none;
+    }
 }

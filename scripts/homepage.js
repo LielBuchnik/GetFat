@@ -1,11 +1,13 @@
 let mainCont = document.getElementById("container");
 let restGrid = document.getElementById("rest-list");
+let welcomeU = document.getElementById("welcome-user");
 let restList = [];
 
 let xhr = new XMLHttpRequest();
 xhr.open("Get", "../data/json/restaurants.json", true);
 
 xhr.onload = function () {
+    localStorage.clear("restData");
     localStorage.setItem("restData", this.responseText)
     let response = JSON.parse(this.responseText);
     if (response.Restaurants) {
@@ -17,6 +19,14 @@ xhr.onload = function () {
 };
 xhr.send();
 
+
+welcomeUser()
+
+function welcomeUser(){
+    let userD = localStorage.getItem("userDetails")
+    userD = JSON.parse(userD);
+    welcomeU.innerHTML = `Hey ${userD.username}, Welcome back!`
+}
 
 function getRests() {
     for (let i = 0; i < restList.length; i++) {
