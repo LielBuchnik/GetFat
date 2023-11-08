@@ -1,5 +1,6 @@
 .header-class{
     display: flex;
     justify-content: space-between;
-
+    background-color: #18a5fa;
+    width: 100%;
 }
