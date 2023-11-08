@@ -1,30 +1,40 @@
+let mainCont = document.getElementById("container");
+let restGrid = document.getElementById("rest-list");
+let restList = [];
+
 let xhr = new XMLHttpRequest();
-xhr.open("Get" , "../data/json/restaurants.json" , true);
+xhr.open("Get", "../data/json/restaurants.json", true);
 
-xhr.onload = function()
-{
-    localStorage.setItem("restData" , this.responseText)
+xhr.onload = function () {
+    localStorage.setItem("restData", this.responseText)
     let response = JSON.parse(this.responseText);
-    for(let x in response)
-    {
-        let obj = response[x];
-        let html = `
-        <ul class="userCard">
-            <li>${obj.id}</li>
-            <li>${obj.name}</li>
-            <li>${obj.username}</li>
-            <li>${obj.email}</li>
-            <button onclick="showMore_handler(${x})">Show More Content</button>
-        </ul>
-        `
-        $("#container").append(html);
+    if (response.Restaurants) {
+        restList = response.Restaurants;
+        console.log(restList);
+        getRests();
     }
-
-   
+    console.log(restList)
 };
 xhr.send();
 
-function showMore_handler(index)
-{
-    window.location.href = `../pages/userPage.html?id=${index+1}`
+
+function getRests() {
+    for (let i = 0; i < restList.length; i++) {
+        let rest = restList[i];
+        console.log(restList[i])
+        restGrid.innerHTML +=
+            `<div class="rest-box">
+                <img class="rest-image" src="${rest.restImg}">
+                <p>${rest.name}</p>
+                <p class="rest-title">${rest.title}</p>
+                <p class="rest-type">${rest.type}</p>
+                <p class="rest-rating">${rest.rating}</p>
+                </div>`
+    }
+}
+
+
+
+function showMore_handler(index) {
+    window.location.href = `../pages/userPage.html?id=${index + 1}`
 }
