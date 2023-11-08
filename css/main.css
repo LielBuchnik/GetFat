@@ -182,7 +182,7 @@ h2{
 .food-image{
     object-fit: cover;
     width: 400px;
-    height: 100px;
+    height: 200px;
     transition: 0.2s;
 }
 
@@ -209,4 +209,38 @@ h2{
     .food-buy{
         display: none;
     }
+}
+
+.prod-price{
+    float: right;
+    margin-top: 100px;
+    margin-right: 10px;
+    color: #1481c5;
+    z-index: 2;
+}
+
+.add-to-cart{
+    background-color: rgba(0, 153, 255, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 55px;
+    transition: 0.2s;
+    margin-top: 100px;
+    z-index: 10;
+    margin-left: 10px;
+
+}
+
+.add-to-cart:hover{
+    background-color: rgba(0, 153, 255, 0.301);
+    color: #1481c5;
+    transition: 0.2s;
+}
+
+.food-desc{
+    color: #454545;
+    font-size: 13px;
+    word-wrap: break-word;
+    margin-left: 10px;
 }

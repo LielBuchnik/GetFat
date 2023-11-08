@@ -30,11 +30,17 @@ function getFood() {
                 let food = rest.food[j];
                 foodList.innerHTML += `<div class="foodBox">
                     <img class="food-image" src="${food.poster}"</img>
-                    <p>${food.title}</p>
-                    <p>${food.description}</p>
-                    <p>${food.price}</p>
+                    <p class="rest-rating">${food.title}</p>
+                    <div class="food-desc">${food.description}</div>
+                    <p class="prod-price">${food.price}</p>
+                    <button class="add-to-cart" onclick="alertMe()"><i class='bx bx-cart-add' style="color: #454545; font-size:25px" ></i></button>
                 </div>`;
             }
         }
     }
+}
+
+
+function alertMe(){
+    alert("Thank you.")
 }
