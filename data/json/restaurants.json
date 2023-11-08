@@ -1,10 +1,76 @@
 {
     "Restaurants": [
         {
-            "restName": "Liel De Italia",
-            "restImg": "../assets/images/thumbnails/2576099.jpg",
+            "name": "Liel De Italia",
+            "restImg": "../data/assets/lieldeitalia.jpg",
             "type": "Pizza",
-            "password": "123123",
+            "rating": "4.3",
+            "description": "",
+            "food": [
+                {
+                    "title": "LielB Valorant Hightlights",
+                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "uploadDate": "12.03.2017",
+                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
+                    "username": "LielB",
+                    "src": "../assets/videos/lielbValHL.mp4",
+                    "views": "25K"
+                },
+                {
+                    "title": "LielB Valorant Hightlights",
+                    "poster": "../assets/images/thumbnails/2576099.jpg",
+                    "uploadDate": "12.03.2017",
+                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
+                    "username": "LielB",
+                    "src": "../assets/videos/lielbValHL.mp4",
+                    "views": "25K"
+                }
+            ],
+            "reviews": [
+                {
+                    "username": "EliyahuAsis16",
+                    "review": "Great Food!"
+                }
+            ]
+        },
+        {
+            "name": "Ha'Falafel Shel Amir",
+            "restImg": "../data/assets/lieldeitalia.jpg",
+            "type": "Middle East",
+            "rating": "4",
+            "description": "",
+            "food": [
+                {
+                    "title": "LielB Valorant Hightlights",
+                    "poster": "../assets/images/thumbnails/2576099.jpg",
+                    "uploadDate": "12.03.2017",
+                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
+                    "username": "LielB",
+                    "src": "../assets/videos/lielbValHL.mp4",
+                    "views": "25K"
+                },
+                {
+                    "title": "LielB Valorant Hightlights",
+                    "poster": "../assets/images/thumbnails/2576099.jpg",
+                    "uploadDate": "12.03.2017",
+                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
+                    "username": "LielB",
+                    "src": "../assets/videos/lielbValHL.mp4",
+                    "views": "25K"
+                }
+            ],
+            "reviews": [
+                {
+                    "username": "EliyahuAsis16",
+                    "review": "Great Food!"
+                }
+            ]
+        },
+        {
+            "name": "Ben's Shakshuka",
+            "restImg": "../assets/images/thumbnails/2576099.jpg",
+            "type": "Middle East",
+            "rating": "4",
             "description": "",
             "food": [
                 {
