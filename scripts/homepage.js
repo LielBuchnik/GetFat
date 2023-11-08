@@ -1,11 +1,9 @@
-
-
 let xhr = new XMLHttpRequest();
-xhr.open("Get" , "https://jsonplaceholder.typicode.com/users" , true);
+xhr.open("Get" , "../data/json/restaurants.json" , true);
 
 xhr.onload = function()
 {
-    localStorage.setItem("usersData" , this.responseText)
+    localStorage.setItem("restData" , this.responseText)
     let response = JSON.parse(this.responseText);
     for(let x in response)
     {
