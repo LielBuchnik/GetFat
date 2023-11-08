@@ -1,0 +1,49 @@
+body{
+    background-color: #18a5fa
+}
+#content{
+    background-color: aliceblue;
+    height: 280px;
+    width: 400px;
+    margin-left: 500px;
+    margin-top: 200px;
+
+}
+
+h2{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+h3{
+    margin-left: 100px;
+    font-size: small;
+}
+
+input[type= "text"]{
+    border: 2px solid #18a5fa;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+#lgnBtn{
+    margin-top: 10px;
+    margin-left: 150px;
+    color: aliceblue;
+    background-color: #18a5fa;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 70px;
+}
+
+#p1{
+    font-size: 10px;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+#p2{
+    font-size: 10px;
+    margin-left: 140px;
+}
