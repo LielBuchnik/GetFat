@@ -3,14 +3,14 @@
         {
         "fullname":"Liel Buhnick",
         "age":24,
-        "userName":"Liel",
+        "username":"Liel",
         "password":"123",
         "id":2
     },
     {
         "fullname":"Amir Shnider",
         "age":30,
-        "userName":"Amir",
+        "username":"Amir",
         "password":"123",
         "id":3
     }
