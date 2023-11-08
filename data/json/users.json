@@ -5,14 +5,16 @@
         "age":24,
         "username":"Liel",
         "password":"123",
-        "id":2
+        "id":2,
+        "orderHistory":"Pizza, Hamburger, Thai"
     },
     {
         "fullname":"Amir Shnider",
         "age":30,
         "username":"Amir",
         "password":"123",
-        "id":3
+        "id":3,
+        "orderHistory":"Pizza, Hamburger, Italian"
     }
 ]
 }
