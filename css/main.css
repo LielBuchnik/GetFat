@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
 .header-class{
     display: flex;
     background-color: #18a5fa;
@@ -39,8 +44,16 @@
     margin-left: 3%;
 }
 
+/* Homepage Restaurant List */
+
 #container{
     width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+#container h2{
+    margin-left: 15%;
+    margin-bottom: 2%;
 }
 
 #rest-list{
@@ -48,6 +61,7 @@
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     width: 75%;
+    margin-left: 15%;
 }
 
 .rest-box{
@@ -56,31 +70,92 @@
     border: 1px solid #18a5fa;
     border-radius: 8px;
     display: inline-block;
+    overflow: hidden;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.33);
+    transition: 0.2s;
 }
 
 .rest-box p{
-    color: #454545;
     font-family: 'Oswald', sans-serif;
     padding: 10px;
     line-height: 0;
     font-weight: 500;
-
+    cursor: pointer;
 }
+
+.rest-time{
+    display: none;
+}
+
+.bx{
+    color: #18a5fa;
+}
+
+.rest-box:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 5px 0px rgba(6,86,161,0.33);
+    transition: 0.2s;
+    .rest-image{
+        object-fit: cover;
+        width: 400px;
+        height: 100px;
+        transition: 0.2s;
+    }
+
+    .rest-desc{
+        display: block;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
 
 .rest-image{
     object-fit: cover;
     width: 400px;
     height: 150px;
+    transition: 0.2s;
+}
+
+.rest-id{
+    display: none;
 }
 
 .rest-title{
+    color: #454545;
     font-size: 16px;
 }
 
 .rest-type{
+    color: #454545;
     font-size: 13px;
 }
 
 .rest-rating{
+    color: #454545;
     font-size: 13px;
+}
+
+.rest-desc{
+    display: none;
+    font-size: 13px;
+    color: #555555;
+}
+
+
+/* Restaurant page */
+
+#foodList{
+    display: inline-grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin-left: 15%;
 }

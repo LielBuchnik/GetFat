@@ -1,29 +1,25 @@
 {
     "Restaurants": [
         {
+            "id": 0,
             "name": "Liel De Italia",
             "restImg": "../data/assets/lieldeitalia.jpg",
             "type": "Pizza",
             "rating": "4.3",
-            "description": "",
+            "description": "My little Italian Shop",
+            "time": "40-60 Minutes",
             "food": [
                 {
-                    "title": "LielB Valorant Hightlights",
+                    "title": "Pizza Margarita",
                     "poster": "../data/assets/lieldeitalia.jpg",
-                    "uploadDate": "12.03.2017",
-                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
-                    "username": "LielB",
-                    "src": "../assets/videos/lielbValHL.mp4",
-                    "views": "25K"
+                    "description": "Pizza Margarita from the house of Liel De Italia",
+                    "price": "14$"
                 },
                 {
-                    "title": "LielB Valorant Hightlights",
-                    "poster": "../assets/images/thumbnails/2576099.jpg",
-                    "uploadDate": "12.03.2017",
-                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
-                    "username": "LielB",
-                    "src": "../assets/videos/lielbValHL.mp4",
-                    "views": "25K"
+                    "title": "Pizza Double Cheese",
+                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "description": "Pizza Margarita from the house of Liel De Italia",
+                    "price": "17$"
                 }
             ],
             "reviews": [
@@ -34,29 +30,25 @@
             ]
         },
         {
+            "id": 1,
             "name": "Ha'Falafel Shel Amir",
-            "restImg": "../data/assets/lieldeitalia.jpg",
+            "restImg": "../data/assets/amirfalafel.jpg",
             "type": "Middle East",
             "rating": "4",
-            "description": "",
+            "description": "Falafel is the best, come on, buy!",
+            "time": "30-60 Minutes",
             "food": [
                 {
-                    "title": "LielB Valorant Hightlights",
-                    "poster": "../assets/images/thumbnails/2576099.jpg",
-                    "uploadDate": "12.03.2017",
-                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
-                    "username": "LielB",
-                    "src": "../assets/videos/lielbValHL.mp4",
-                    "views": "25K"
+                    "title": "Pizza Margarita",
+                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "description": "Pizza Margarita from the house of Liel De Italia",
+                    "price": "14$"
                 },
                 {
-                    "title": "LielB Valorant Hightlights",
-                    "poster": "../assets/images/thumbnails/2576099.jpg",
-                    "uploadDate": "12.03.2017",
-                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
-                    "username": "LielB",
-                    "src": "../assets/videos/lielbValHL.mp4",
-                    "views": "25K"
+                    "title": "Pizza Double Cheese",
+                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "description": "Pizza Margarita from the house of Liel De Italia",
+                    "price": "17$"
                 }
             ],
             "reviews": [
@@ -67,29 +59,25 @@
             ]
         },
         {
-            "name": "Ben's Shakshuka",
-            "restImg": "../assets/images/thumbnails/2576099.jpg",
+            "id": 2,
+            "name": "Ben's Humus",
+            "restImg": "../data/assets/benhumus.jpg",
             "type": "Middle East",
             "rating": "4",
-            "description": "",
+            "description": "Love Humus, Not Hamas!",
+            "time": "42-70 Minutes",
             "food": [
                 {
-                    "title": "LielB Valorant Hightlights",
-                    "poster": "../assets/images/thumbnails/2576099.jpg",
-                    "uploadDate": "12.03.2017",
-                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
-                    "username": "LielB",
-                    "src": "../assets/videos/lielbValHL.mp4",
-                    "views": "25K"
+                    "title": "Pizza Margarita",
+                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "description": "Pizza Margarita from the house of Liel De Italia",
+                    "price": "14$"
                 },
                 {
-                    "title": "LielB Valorant Hightlights",
-                    "poster": "../assets/images/thumbnails/2576099.jpg",
-                    "uploadDate": "12.03.2017",
-                    "description": "Hey, Welcome to my page, dont forget to follow me!! #LielB_was_Here",
-                    "username": "LielB",
-                    "src": "../assets/videos/lielbValHL.mp4",
-                    "views": "25K"
+                    "title": "Pizza Double Cheese",
+                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "description": "Pizza Margarita from the house of Liel De Italia",
+                    "price": "17$"
                 }
             ],
             "reviews": [

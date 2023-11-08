@@ -23,18 +23,26 @@ function getRests() {
         let rest = restList[i];
         console.log(restList[i])
         restGrid.innerHTML +=
-            `<div class="rest-box">
+            `<div class="rest-box" onclick="showMore_handler(${i})">
                 <img class="rest-image" src="${rest.restImg}">
                 <p>${rest.name}</p>
-                <p class="rest-title">${rest.title}</p>
                 <p class="rest-type">${rest.type}</p>
-                <p class="rest-rating">${rest.rating}</p>
+                <p class="rest-rating">${rest.rating} <i class='bx bx-star' ></i></p>
+                <p class="rest-desc">${rest.description}</p>
+                <p class="rest-id">${rest.id}</p>
                 </div>`
     }
 }
 
 
-
 function showMore_handler(index) {
-    window.location.href = `../pages/userPage.html?id=${index + 1}`
+    window.location.href = `../html/restpage.html?id=${index}`
 }
+
+// function sortByFood() {
+//     let priorityOrder = ["Pizza", "Middle East", "Asian", "Mexican", "Burgers"];
+//     restGrid.sort((a, b) => {
+//         return priorityOrder.indexOf(a.priority) - priorityOrder.indexOf(b.priority);
+//     });
+//     getRests();
+// }
