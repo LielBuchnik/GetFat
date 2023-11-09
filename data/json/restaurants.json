@@ -13,25 +13,25 @@
                     "title": "Pizza Margarita",
                     "poster": "../data/assets/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
-                    "price": "14$"
+                    "price": 14
                 },
                 {
                     "title": "Pizza Double Cheese",
                     "poster": "../data/assets/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
-                    "price": "17$"
+                    "price": 17
                 },
                 {
                     "title": "Pizza Bassa",
                     "poster": "../data/assets/lieldeitalia.jpg",
                     "description": "Pizza for some bad days, whats better more than dough, cheese, onion and olives?",
-                    "price": "19$"
+                    "price": 19
                 },
                 {
                     "title": "Pizza King",
                     "poster": "../data/assets/lieldeitalia.jpg",
                     "description": "We just put all the addons for you on it, why? youre a king.",
-                    "price": "50$"
+                    "price": 50
                 }
             ],
             "reviews": [
@@ -54,13 +54,13 @@
                     "title": "Pizza Margarita",
                     "poster": "../data/assets/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
-                    "price": "14$"
+                    "price": 14
                 },
                 {
                     "title": "Pizza Double Cheese",
                     "poster": "../data/assets/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
-                    "price": "17$"
+                    "price": 17
                 }
             ],
             "reviews": [
@@ -83,13 +83,13 @@
                     "title": "Pizza Margarita",
                     "poster": "../data/assets/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
-                    "price": "14$"
+                    "price": 14
                 },
                 {
                     "title": "Pizza Double Cheese",
                     "poster": "../data/assets/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
-                    "price": "17$"
+                    "price": 17
                 }
             ],
             "reviews": [

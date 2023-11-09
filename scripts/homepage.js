@@ -7,7 +7,7 @@ let xhr = new XMLHttpRequest();
 xhr.open("Get", "../data/json/restaurants.json", true);
 
 xhr.onload = function () {
-    localStorage.clear("restData");
+    localStorage.removeItem("restData");
     localStorage.setItem("restData", this.responseText)
     let response = JSON.parse(this.responseText);
     if (response.Restaurants) {
@@ -25,9 +25,13 @@ welcomeUser()
 function welcomeUser(){
     let userD = localStorage.getItem("userDetails")
     userD = JSON.parse(userD);
-    welcomeU.innerHTML = `Hey ${userD.username}`
+    if(userD){
+    welcomeU.innerHTML = `Hey ${userD.username}, Ready to Order?`
+}else{
+    welcomeU.innerHTML = `<span>Welcome Guest, Please <a href="../html/login.html">Sign In</a></span>`
 }
 
+}
 function getRests() {
     restGrid.innerHTML ='';
     for (let i = 0; i < restList.length; i++) {

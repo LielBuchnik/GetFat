@@ -1,6 +1,8 @@
 let mainCont = document.getElementById("container");
 let foodList = document.getElementById("foodList");
 let welcomeU = document.getElementById("welcome-user");
+let cartItems = [];
+
 
 let queryParams = window.location.search;
 let query = new URLSearchParams(queryParams);
@@ -28,19 +30,20 @@ function getFood() {
             console.log(allRests.Restaurants[i]);
             for (let j = 0; j < rest.food.length; j++) {
                 let food = rest.food[j];
-                foodList.innerHTML += `<div class="foodBox">
-                    <img class="food-image" src="${food.poster}"</img>
+                foodList.innerHTML += `<div class="foodBox" onclick="addToCart(${food.title, food.price})">
+                <img class="food-image" src="${food.poster}"</img>
                     <p class="rest-rating">${food.title}</p>
                     <div class="food-desc">${food.description}</div>
-                    <p class="prod-price">${food.price}</p>
-                    <button class="add-to-cart" onclick="alertMe()"><i class='bx bx-cart-add' style="color: #454545; font-size:25px" ></i></button>
-                </div>`;
+                    <p class="prod-price">${food.price}$</p>
+                    </div>`;
             }
         }
     }
 }
 
 
-function alertMe(){
-    alert("Thank you.")
+function addToCart(product){
+
+    cartItems.push(product);
+    console.log(cartItems)
 }
