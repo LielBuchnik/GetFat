@@ -50,25 +50,31 @@ function getFood() {
 }
 
 
-function addToCart(poster ,name, price) {
+addToCart = (poster ,name, price) => {
     cartItems.push({ poster, name, price });
     console.log(cartItems)
-    orderUpdate(cartItems);
+    orderUpdate();
 }
 
-function orderUpdate(foodItems) {
+orderUpdate = () => {
     cart.innerHTML = "";
     let totalPrice = 0;
 
-    for (let i = 0; i < foodItems.length; i++) {
-        let food = foodItems[i];
+    for (let i = 0; i < cartItems.length; i++) {
+        let food = cartItems[i];
         cart.innerHTML += `<div class="food-list-cart">
+            <i class='bx bx-x' onclick="removeItem(${i})"></i>
             <span class='cart-food-title'> ${food.name} </span>
             <span class='cart-food-price'> ${food.price}$ </span>
             </div>`;
-            totalPrice += parseFloat(food.price);
+            totalPrice += Number(food.price);
     }
 
-    total.innerHTML = "<div>Total Price: $" + totalPrice.toFixed(2) + "</div>";
+    total.innerHTML = "<div>Total Price: $" + totalPrice + "</div>";
 
+}
+
+removeItem = (index) => {
+    cartItems.splice(index, 1)
+    orderUpdate()
 }

@@ -489,9 +489,9 @@ h2 {
     margin-left: 50px;
 }
 
-/* .food-list-cart {
-    width: 50%;
-} */
+.food-list-cart {
+    border-top: 1px solid rgba(0, 0, 0, 0.041);
+}
 
 .cart-food-price {
     text-align: right;
@@ -519,10 +519,16 @@ h2 {
 
 .order-button:focus .bx{
     color: white;
-    animation: spinNgo 4s infinite;
+    animation: spinNow 4s;
+    animation-fill-mode: none; 
 }
 
-@keyframes spinNgo {
+.order-button span{
+    animation: goNow 4s ease-in-out;
+    animation-fill-mode: none; 
+}
+
+@keyframes spinNow {
     0% {
         transform: rotate(-35deg);
     }
@@ -530,4 +536,30 @@ h2 {
     90% {
         margin-left: 390px;
     }
+}
+
+@keyframes goNow {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+.bx-x{
+    color: #18a3fa9d;
+    padding-top: 2px;
+    float: left;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.bx-x:hover{
+    cursor: pointer;
+    color: #fa1818de;
+    transition: 0.2s;
 }
