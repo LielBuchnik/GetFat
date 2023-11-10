@@ -3,7 +3,7 @@
         {
             "id": 0,
             "name": "Liel De Italia",
-            "restImg": "../data/assets/lieldeitalia.jpg",
+            "restImg": "../data/assets/restaurants/lieldeitalia.jpg",
             "type": "Pizza",
             "rating": "4.3",
             "description": "My little Italian Shop",
@@ -11,27 +11,39 @@
             "food": [
                 {
                     "title": "Pizza Margarita",
-                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
                     "price": 14
                 },
                 {
                     "title": "Pizza Double Cheese",
-                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
                     "price": 17
                 },
                 {
                     "title": "Pizza Bassa",
-                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
                     "description": "Pizza for some bad days, whats better more than dough, cheese, onion and olives?",
                     "price": 19
                 },
                 {
                     "title": "Pizza King",
-                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
                     "description": "We just put all the addons for you on it, why? youre a king.",
                     "price": 50
+                },
+                {
+                    "title": "Pizza Pineapple",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
+                    "description": "Wanna feel like your at the beach? get pineapple pizza!",
+                    "price": 50
+                },
+                {
+                    "title": "2 Pizzas Deal",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
+                    "description": "A night with the gang? get 2 XL pizzas!",
+                    "price": 30
                 }
             ],
             "reviews": [
@@ -44,7 +56,7 @@
         {
             "id": 1,
             "name": "Ha'Falafel Shel Amir",
-            "restImg": "../data/assets/amirfalafel.jpg",
+            "restImg": "../data/assets/restaurants/amirfalafel.jpg",
             "type": "Middle East",
             "rating": "4",
             "description": "Falafel is the best, come on, buy!",
@@ -52,13 +64,13 @@
             "food": [
                 {
                     "title": "Pizza Margarita",
-                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
                     "price": 14
                 },
                 {
                     "title": "Pizza Double Cheese",
-                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
                     "price": 17
                 }
@@ -73,7 +85,7 @@
         {
             "id": 2,
             "name": "Ben's Humus",
-            "restImg": "../data/assets/benhumus.jpg",
+            "restImg": "../data/assets/restaurants/benhumus.jpg",
             "type": "Middle East",
             "rating": "4",
             "description": "Love Humus, Not Hamas!",
@@ -81,13 +93,13 @@
             "food": [
                 {
                     "title": "Pizza Margarita",
-                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
                     "price": 14
                 },
                 {
                     "title": "Pizza Double Cheese",
-                    "poster": "../data/assets/lieldeitalia.jpg",
+                    "poster": "../data/assets/restaurants/lieldeitalia.jpg",
                     "description": "Pizza Margarita from the house of Liel De Italia",
                     "price": 17
                 }

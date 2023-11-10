@@ -367,18 +367,18 @@ h2 {
 }
 
 .right-side-restpage {
-    margin-top: 3%;
-    width: 18%;
+    margin-top: 2.1%;
+    width: 20%;
     border: 1px solid rgba(0, 0, 3, 0.158);
-    height: 500px;
+    height: 620px;
     background-color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 3px;
 }
 
 .left-side-restpage {
-    margin-top: 3%;
-    width: 70%;
+    margin-top: 0%;
+    width: 65%;
 }
 
 #foodTitle {
@@ -411,7 +411,7 @@ h2 {
 .food-image {
     object-fit: cover;
     width: 300px;
-    height: 200px;
+    height: 150px;
     transition: 0.2s;
 }
 
@@ -442,7 +442,7 @@ h2 {
 }
 
 .prod-price {
-    margin-top: 25px;
+    margin-top: 5px;
     color: #1481c5;
 }
 
@@ -465,7 +465,7 @@ h2 {
 
 .food-desc {
     color: #454545;
-    height: 100px;
+    height: 75px;
     font-size: 13px;
     word-wrap: break-word;
     margin-left: 10px;
@@ -480,7 +480,7 @@ h2 {
     width: 90%;
     margin-left: 2%;
     margin-bottom: 5%;
-    height: 350px;
+    height: 440px;
     overflow-y: auto;
 }
 
@@ -502,31 +502,36 @@ h2 {
     width: 50px;
 }
 
-.order-button{
-    width: 75%;
-    font-size: 20px;
-    height: fit-content;
+#order-button{
+    width: 55%;
+    margin-top: 15px;
+    height: 35px;
     background-color: #18a5fa;
     border: 1px solid rgba(0, 0, 0, 0.171);
     border-radius: 4px;
-    overflow: none;
+    overflow: hidden;
     color: white;
 }
-
-.order-button .bx{
-    color: white;
+#order-button #biker{
+    margin-top: 5px;
+    width: 10%;
 }
 
-.order-button:focus .bx{
+#order-button:focus #biker{
     color: white;
     animation: spinNow 4s;
     animation-fill-mode: none; 
 }
 
+/* .order-button:focus span{
+    display: none;
+    transition: 0.2s;
+}
+
 .order-button span{
     animation: goNow 4s ease-in-out;
     animation-fill-mode: none; 
-}
+}*/
 
 @keyframes spinNow {
     0% {
@@ -537,7 +542,7 @@ h2 {
         margin-left: 390px;
     }
 }
-
+/* 
 @keyframes goNow {
     0% {
         opacity: 1;
@@ -547,7 +552,7 @@ h2 {
         opacity: 0;
         display: none;
     }
-}
+} */
 
 
 .bx-x{

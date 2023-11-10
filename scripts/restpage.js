@@ -4,6 +4,7 @@ let welcomeU = document.getElementById("welcome-user");
 let restTitle = document.getElementById("foodTitle");
 let cart = document.getElementById("order-container");
 let total = document.getElementById("total-price");
+let orderBtn = document.getElementById("order-button");
 let cartItems = [];
 
 
@@ -77,4 +78,16 @@ orderUpdate = () => {
 removeItem = (index) => {
     cartItems.splice(index, 1)
     orderUpdate()
+}
+
+orderBtn.addEventListener('click', switchText);
+
+async function switchText(){
+    await delay(1200)
+    orderBtn.innerHTML = `Thank You For Ordering`;
+    orderBtn.style.transition = 'all 5s ease-in 3.5s';
+}
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
