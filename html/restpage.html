@@ -13,14 +13,23 @@
 <body>
     <header class="header-class">
         <div class="navbar">
-            <a href="../html/homepage.html" class="logo"><img class="logo-img" src="../data/assets/sumo.png"/><span>GetFat</span></a>
+            <a href="../html/homepage.html" class="logo"><img class="logo-img"
+                    src="../data/assets/sumo.png" /><span>GetFat</span></a>
             <div id="welcome-user"></div>
         </div>
     </header>
-        <div id="container">
+    <div id="rest-page-container">
+        <div class="left-side-restpage">
             <p id="foodTitle">Our Menu</p>
             <div id="foodList"></div>
         </div>
+        <div class="right-side-restpage">
+            <h2 class="order-title">Your Order:</h2>
+            <div id="order-container"></div>
+            <div id="total-price">Total Price: 0$</div>
+            <button class="order-button"><i class='bx bx-bowl-hot'></i>Order Now!</button>
+        </div>
+    </div>
 </body>
 <script src="../scripts/restpage.js"></script>
 
