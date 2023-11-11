@@ -15,18 +15,20 @@
         <div class="navbar">
             <a href="../html/homepage.html" class="logo"><img class="logo-img"
                     src="../data/assets/sumo.png" /><span>GetFat</span></a>
-            <div id="welcome-user"></div>
+                    <div class="logOut"><a onclick="logOut()">Log Out</a></div>
+
+                    <div id="welcome-user"></div>
         </div>
     </header>
     <div class="sorting-buttons">
         <h3>What Would You Like To Eat?</h3>
         <div id="sortByFood">
             <button class="All" onclick="getRests()">All</button>
-            <button class="Pizza" onclick="sortByFood(event, 'Pizza')">Pizza</button>
-            <button class="Middle-East" onclick="sortByFood(event, 'Middle East')">Middle Eastern</button>
-            <button class="Asian" onclick="sortByFood(event, 'Asian')">Asian</button>
-            <button class="Mexican" onclick="sortByFood(event, 'Mexican')">Mexican</button>
-            <button class="Burger" onclick="sortByFood(event, 'Burger')">Burger</button>
+            <button class="Pizza" onclick="sortByFood('Pizza')">Pizza</button>
+            <button class="Middle-East" onclick="sortByFood('Middle East')">Middle Eastern</button>
+            <button class="Asian" onclick="sortByFood('Asian')">Asian</button>
+            <button class="Mexican" onclick="sortByFood('Mexican')">Mexican</button>
+            <button class="Burger" onclick="sortByFood('Burger')">Burger</button>
         </div>
     </div>
     <div id="container">

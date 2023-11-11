@@ -15,17 +15,46 @@
         <div class="navbar">
             <a href="../html/homepage.html" class="logo"><img class="logo-img"
                     src="../data/assets/sumo.png" /><span>GetFat</span></a>
-            <div id="welcome-user"></div>
+                    <div class="logOut"><a onclick="logOut()">Log Out</a></div>
+
+                    <div id="welcome-user"></div>
         </div>
     </header>
+    <!-- Start of login popup -->
+    <div id="login-popup">
+        <div class="post-form-title">
+            <h1 style="margin-bottom: 4%;">Log In</h1>
+            <div>
+                <input class="input-popup" type="text" placeholder="Username" id="username" />
+            </div>
+            <input class="input-popup" type="password" placeholder="Password" id="password" />
+            <p style="font-size: 11px;">Forgot Password?</p>
+            <p style="font-size: 11px;">New User? Sign Up</p>
+        </div>
+        <div id="add-post-btn">
+            <button id="login-button">Login</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- End of login popup -->
+
+    <!-- Overscreen container for popup -->
+    <div id="pop-container">
+    </div>
+    <!-- End of Overscreen container for popups -->
     <div id="rest-page-container">
         <div class="left-side-restpage">
             <p id="foodTitle">Our Menu</p>
             <div id="foodList"></div>
         </div>
+
         <div class="right-side-restpage">
             <h2 class="order-title">Your Order:</h2>
-            <div id="order-container"></div>
+            <div id="order-container">
+                <div><i class='bx bx-basket'></i></div>
+                Your cart is empty.. 😭
+            </div>
             <div id="total-price">Total Price: 0$</div>
             <button id="order-button"><img id="biker" src="../data/assets/icons/pizza-deliver.png"></button>
         </div>

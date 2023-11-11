@@ -54,7 +54,7 @@ function showMore_handler(index) {
     window.location.href = `../html/restpage.html?id=${index}`
 }
 
-function sortByFood(event, foodType) {
+function sortByFood(foodType) {
     let filteredRestaurants = restList.filter(rest => rest.type === foodType);
     restGrid.innerHTML = "";
 
@@ -70,4 +70,9 @@ function sortByFood(event, foodType) {
                 <p class="rest-id">${rest.id}</p>
             </div>`;
     }
+}
+
+logOut = () => {
+    localStorage.clear();
+    window.location.href = "../html/login.html";
 }
